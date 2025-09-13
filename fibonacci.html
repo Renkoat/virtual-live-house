@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>フィボナッチ数列</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>フィボナッチ数列</h1>
+      <a href="index.html" class="back-link">← Indexに戻る</a>
+    </header>
+    <main>
+      <section>
+        <h2>フィボナッチ数列とは</h2>
+        <p>
+          フィボナッチ数列は、各項がその前の2つの項の和になっている数列です。通常、最初の2つの項は0と1と定義されます。
+        </p>
+        <p>
+          **例:** 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+        </p>
+      </section>
+
+      <section>
+        <h2>Swiftにおけるフィボナッチ数列の例</h2>
+        <p>
+          `eiπ.ipynb` には、Swift言語でフィボナッチ数列を生成するためのシーケンスの例が記載されています。
+        </p>
+        <pre><code>var fib = sequence(state: (0, 1)) {
+    (num: inout (Int, Int)) -> Int? in
+    let (r, n) = num; num = (n, r + n)
+    return r
+}</code></pre>
+      </section>
+
+      <section>
+        <h2>フィボナッチ数列の総和</h2>
+        <p>
+          `eiπ.ipynb` には「フィボナッチ数列の総和は -1」という興味深い記述があります。これは、発散する級数に対する解析接続という数学的な手法で得られる結果です。
+        </p>
+      </section>
+
+      <section>
+        <h2>その他の関連事項</h2>
+        <p>
+          フィボナッチ数列は、自然界の様々な場所で見られます。例えば、花びらの数、ひまわりの種の配列、松ぼっくりの鱗の配列など、多くの成長パターンに関係しています。
+        </p>
+        <p>
+          また、アルゴリズム作曲や金融市場の分析など、様々な分野で応用されています。
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
